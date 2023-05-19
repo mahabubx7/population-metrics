@@ -15,8 +15,13 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
+.husky/*
+!.husky/pre-commit
 .idea
 .DS_Store
+.exe
+.ini
 *.suo
 *.ntvs*
 *.njsproj
