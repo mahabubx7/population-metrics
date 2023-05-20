@@ -3,7 +3,7 @@
 }
 
 .header h4 {
-  @apply capitalize text-xl text-2xl;
+  @apply capitalize text-2xl;
 }
 
 .btn-nav {
