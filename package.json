@@ -15,7 +15,7 @@
     "node": ">=16.x"
   },
   "lint-staged": {
-    "**/*.{js,jsx}": "yarn eslint '**/*.{js,jsx}",
+    "**/*.{js,jsx, css, scss}": "yarn eslint '**/*.{js,jsx}; yarn stylelint '**/*.{css,scss}'",
     "**/*.{css,scss,js,jsx,html}": "yarn prettier . -w"
   },
   "dependencies": {
