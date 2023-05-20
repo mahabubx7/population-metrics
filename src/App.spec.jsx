@@ -10,7 +10,7 @@ describe("App", () => {
         <App />
       </Provider>
     );
-    const headline = screen.getByText(/Vite \+ React/i);
+    const headline = screen.getByText(/Population/i);
     expect(headline).toBeInTheDocument();
   });
 });
