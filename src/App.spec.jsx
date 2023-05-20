@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
-import store from "../src/redux/store";
-import App from "../src/App";
+import store from "./redux/store";
+import App from "./App";
 
 describe("App", () => {
   it("renders headline", () => {
