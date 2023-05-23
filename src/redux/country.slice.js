@@ -22,6 +22,7 @@ const countrySlice = createSlice({
     builder.addCase(getCountry.pending, (state) => ({
       ...state,
       isLoading: true,
+      data: [],
     }));
     builder.addCase(getCountry.fulfilled, (state, { payload }) => ({
       ...state,
@@ -39,6 +40,7 @@ const countrySlice = createSlice({
     builder.addCase(searchCountry.pending, (state) => ({
       ...state,
       isLoading: true,
+      data: [],
     }));
     builder.addCase(searchCountry.fulfilled, (state, { payload }) => ({
       ...state,
