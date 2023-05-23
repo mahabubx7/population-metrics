@@ -1,6 +1,11 @@
+import Header from "../components/Header";
+
 const ErrorPage = () => (
   <>
-    <h1>Error!</h1>
+    <Header />
+    <main className="pages">
+      <h1>Error page!</h1>
+    </main>
   </>
 );
 
