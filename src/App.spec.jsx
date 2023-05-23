@@ -4,13 +4,13 @@ import store from "./redux/store";
 import App from "./App";
 
 describe("App", () => {
-  it("renders headline", () => {
+  it("should render homepage & headline", () => {
     render(
       <Provider store={store}>
         <App />
       </Provider>
     );
-    const headline = screen.getByText(/Population/i);
+    const headline = screen.getByText(/population metrics/i);
     expect(headline).toBeInTheDocument();
   });
 });

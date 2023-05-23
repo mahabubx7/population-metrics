@@ -28,7 +28,7 @@ Header.propTypes = {
 
 Header.defaultProps = {
   isDetail: false,
-  title: "population",
+  title: "population metrics",
 };
 
 export default Header;

@@ -5,3 +5,6 @@
 @tailwind utilities;
 
 /* === global styles === */
+.pages {
+  @apply mt-[64px];
+}
