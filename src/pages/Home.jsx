@@ -5,6 +5,8 @@ import { filterSearch } from "../redux/country.slice";
 import Header from "../components/Header";
 import Card from "../components/Card";
 import "../components/styles/home.css";
+import Button from "../components/molecules/Button";
+import Loading from "../components/Loading";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -17,7 +19,7 @@ const Home = () => {
     const name = e.target.children[0].value;
     const list = data.filter((c) => c.name.includes(name));
     if (list.length > 0) {
-      dispatch(filterSearch);
+      dispatch(filterSearch(name));
     } else {
       dispatch(searchCountry(name));
     }
@@ -42,13 +44,14 @@ const Home = () => {
             placeholder="search a country"
             autoComplete="off"
           />
-
-          <button type="button" onClick={() => dispatch(getCountry())}>
-            reset
-          </button>
+          <Button
+            classes="text-theme"
+            icon="refresh-line"
+            onClick={() => dispatch(getCountry())}
+          />
         </form>
         <div className="cards">
-          {isLoading && <p>Loading...</p>}
+          {isLoading && <Loading />}
           {error && <p>Error! {JSON.stringify(error)}</p>}
           {isLoaded &&
             !error &&

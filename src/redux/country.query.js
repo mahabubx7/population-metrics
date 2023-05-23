@@ -1,5 +1,4 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import axios from "axios";
 
 const ApiKey = "6ey4sjw8A4R8BYLLnWiPUQ==H7kGL6nxt49Ho8lY";

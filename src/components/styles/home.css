@@ -1,7 +1,47 @@
 .cards {
-  @apply grid grid-cols-2 gap-3 w-full mt-3 p-2;
+  @apply grid grid-cols-2 gap-3 w-full mt-1 p-2 relative;
+}
+
+.loader {
+  @apply absolute top-0 left-0 w-full flex justify-center items-center;
+
+  min-height: calc(100vh - 200px);
+}
+
+.loader img {
+  @apply animate-spin;
 }
 
 .card {
-  @apply bg-red-50 p-3 min-h-[200px] rounded-md;
+  @apply bg-red-100 p-2 min-h-[150px] rounded-md text-black;
+}
+
+.card h4 {
+  @apply font-semibold mt-1 text-lg;
+}
+
+.card .btn-detail {
+  @apply bg-white text-theme ml-auto rounded-md text-lg;
+}
+
+.detail-card {
+  @apply flex flex-col p-2 min-h-screen bg-warmGray-100;
+}
+
+.detail-card h2 {
+  @apply text-4xl font-bold self-center mb-5 text-theme;
+}
+
+.detail-card .flag {
+  @apply rounded-[0.25rem] mb-3;
+}
+
+.detail-card i,
+.detail-card p {
+  @apply bg-red-500 py-2 px-3 rounded-md text-white;
+}
+
+.detail-card i:nth-child(2n),
+.detail-card p:nth-child(2n) {
+  @apply bg-theme my-3;
 }

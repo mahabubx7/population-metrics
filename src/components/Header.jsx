@@ -4,7 +4,7 @@ import Button from "./molecules/Button";
 import List from "./organisms/List";
 import "./styles/header.css";
 
-const Header = ({ isDetail }) => (
+const Header = ({ isDetail, title }) => (
   <header className="header">
     {isDetail === true ? (
       <Link to="/">
@@ -13,7 +13,7 @@ const Header = ({ isDetail }) => (
     ) : (
       ""
     )}
-    <h4>population</h4>
+    <h4>{title}</h4>
     <List
       classes="btn-icons"
       list={[{ icon: "settings-3-line" }, { icon: "mic-line" }]}
@@ -23,8 +23,12 @@ const Header = ({ isDetail }) => (
 
 Header.propTypes = {
   isDetail: propTypes.bool,
+  title: propTypes.string,
 };
 
-Header.defaultProps = { isDetail: false };
+Header.defaultProps = {
+  isDetail: false,
+  title: "population metrics",
+};
 
 export default Header;
