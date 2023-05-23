@@ -18,14 +18,18 @@ const Country = () => {
 
   return (
     <>
-      <Header isDetail />
+      <Header isDetail title={info[0].name} />
       <main className="pages">
-        {/* <img className="flag" alt="flag" src={info[0].flag} /> */}
+        <img
+          className="flag"
+          alt="flag"
+          src={`https://flagcdn.com/${info[0].iso2.toLowerCase()}.svg`}
+        />
         <b>{info[0].name}</b>
         <span> = </span>
         <i>
           {info[0].population > 100 ? (
-            <>{info[0].population / 1000} M</>
+            <>{Math.abs(info[0].population / 1000).toFixed(2)} M</>
           ) : (
             <>{info[0].population} K</>
           )}
