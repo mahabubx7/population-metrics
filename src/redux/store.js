@@ -1,12 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import countriesApi from "./countries.query";
+import countryReducer from "./country.slice";
 
 const store = configureStore({
   reducer: {
-    [countriesApi.reducerPath]: countriesApi.reducer,
+    country: countryReducer,
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(countriesApi.middleware),
 });
 
 export default store;
