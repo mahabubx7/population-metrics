@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Icon from "../Icon";
 
-describe("Icon", () => {
+describe("Atoms/Icon Tests", () => {
   it("should render the Icon component", () => {
     render(<Icon name="mic-line" />);
     expect(screen.getByTestId("icon")).toBeInTheDocument();
