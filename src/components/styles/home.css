@@ -1,5 +1,5 @@
 .cards {
-  @apply grid grid-cols-2 gap-0 w-full mt-0 p-0 relative;
+  @apply grid grid-cols-2 gap-0 w-full mt-0 p-0 relative bg-pink-600;
 }
 
 .loader {
@@ -16,16 +16,32 @@
   @apply bg-theme-deem p-4 text-black relative min-h-[250px];
 }
 
+.card h4 {
+  @apply font-semibold mt-1 text-lg text-white;
+}
+
 .bg-overlay {
   @apply absolute bottom-3 left-3 text-slate-100 text-[1.75rem] font-bold;
 }
 
-.card:nth-child(3n + 1) {
-  @apply bg-theme-light;
+.card:first-child {
+  @apply col-span-2 pb-16 min-h-[180px] flex justify-between bg-theme-light mb-2;
 }
 
-.card h4 {
-  @apply font-semibold mt-1 text-lg text-white;
+.card:first-child > .bg-overlay {
+  @apply top-[42%] right-3 left-[inherit] text-4xl;
+}
+
+.card:first-child > img {
+  @apply w-[50%] ml-0 mr-1;
+}
+
+.card:first-child > h4 {
+  @apply text-2xl text-center;
+}
+
+.card:nth-child(3n - 1) {
+  @apply bg-theme-light;
 }
 
 .card .btn-holder {

@@ -5,7 +5,7 @@ const ApiKey = "6ey4sjw8A4R8BYLLnWiPUQ==H7kGL6nxt49Ho8lY";
 
 export const getCountry = createAsyncThunk("country/get", async () => {
   const countries = await axios.get(
-    "https://api.api-ninjas.com/v1/country?limit=30",
+    "https://api.api-ninjas.com/v1/country?limit=29",
     {
       headers: {
         "X-Api-Key": ApiKey,
