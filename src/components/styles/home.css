@@ -1,5 +1,5 @@
 .cards {
-  @apply grid grid-cols-2 gap-3 w-full mt-1 p-2 relative;
+  @apply grid grid-cols-2 gap-0 w-full mt-0 p-0 relative;
 }
 
 .loader {
@@ -13,11 +13,19 @@
 }
 
 .card {
-  @apply bg-red-100 p-2 min-h-[150px] rounded-md text-black;
+  @apply bg-theme-deem p-4 text-black relative;
+}
+
+.bg-overlay {
+  @apply absolute bottom-3 left-1 text-slate-300 text-3xl font-bold;
+}
+
+.card:nth-child(3n + 1) {
+  @apply bg-theme-light;
 }
 
 .card h4 {
-  @apply font-semibold mt-1 text-lg;
+  @apply font-semibold mt-1 text-lg text-white;
 }
 
 .card .btn-detail {

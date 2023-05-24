@@ -10,6 +10,8 @@ export default {
     colors: {
       ...colors,
       theme: "#ec4c8b",
+      "theme-deem": "#d04379",
+      "theme-light": "#fe5395",
     },
   },
   plugins: [],

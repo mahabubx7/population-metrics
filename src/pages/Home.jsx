@@ -35,17 +35,17 @@ const Home = () => {
       <main className="pages">
         <form
           onSubmit={handleInput}
-          className="flex items-center justify-center w-full bg-gray-100 gap-x-4"
+          className="flex items-center justify-around w-full bg-theme-light gap-x-4"
         >
           <input
-            className="p-1 pl-3 border-2 border-red-300 my-2 rounded"
+            className="p-1 pl-3 border-2 border-theme-deem my-2 rounded"
             type="text"
             name="search"
             placeholder="search a country"
             autoComplete="off"
           />
           <Button
-            classes="text-theme"
+            classes="text-white"
             icon="refresh-line"
             onClick={() => dispatch(getCountry())}
           />
