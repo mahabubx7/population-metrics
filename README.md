@@ -81,7 +81,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [**Live Demo**](###) Add loom video preview here.
+[![Watch the video](https://cdn.loom.com/sessions/thumbnails/e79125831ad94747a7b9ea227cfaf16c-with-play.gif)](https://www.loom.com/embed/e79125831ad94747a7b9ea227cfaf16c)
+
+Population Metrics - React Capstone Project - (Mobile Web App.) - Watch Video
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
