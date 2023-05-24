@@ -5,7 +5,9 @@
 
   <h3><b>Population Metrics</b></h3>
 
-![population_metrics_ss](__link__)
+<img alt="homepage" src="https://github.com/mahabubx7/population-metrics/assets/122348996/5d8b75ee-011c-46d5-84af-f4e51a92925e" width="240" />
+<img alt="homepage" src="https://github.com/mahabubx7/population-metrics/assets/122348996/1c48ab9e-a748-4f4d-b43a-5409aa6c3daf" width="240" />
+<img alt="homepage" src="https://github.com/mahabubx7/population-metrics/assets/122348996/08c63bab-0424-4d16-8cd4-656f5bf19781" width="240" />
 
 </div>
 <!-- TABLE OF CONTENTS -->
@@ -149,7 +151,9 @@ $ yarn lint:fix
 
 ## Screen Shoots <a name="screenshot"></a>
 
-screenshots--to-be-added 2 at least.
+<img alt="homepage" src="https://github.com/mahabubx7/population-metrics/assets/122348996/5d8b75ee-011c-46d5-84af-f4e51a92925e" width="240" />
+<img alt="homepage" src="https://github.com/mahabubx7/population-metrics/assets/122348996/1c48ab9e-a748-4f4d-b43a-5409aa6c3daf" width="240" />
+<img alt="homepage" src="https://github.com/mahabubx7/population-metrics/assets/122348996/08c63bab-0424-4d16-8cd4-656f5bf19781" width="240" />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
