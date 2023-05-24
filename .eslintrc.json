@@ -35,7 +35,8 @@
       "files": [
         "src/**/*.slice.js",
         "src/**/*.query.js",
-        "src/redux/__tests__"
+        "src/redux/__tests__",
+        "src/setupTests.js"
       ],
       // avoid state param assignment
       "rules": {
