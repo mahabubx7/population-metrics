@@ -3,13 +3,13 @@
 }
 
 .loader {
-  @apply fixed top-0 left-0 w-full flex bg-white justify-center items-center;
+  @apply fixed top-0 left-0 w-full flex bg-white justify-center items-start;
 
   min-height: 100vh;
 }
 
 .loader img {
-  @apply animate-spin;
+  @apply animate-spin mt-[120px];
 }
 
 .card {

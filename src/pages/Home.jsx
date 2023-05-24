@@ -37,13 +37,15 @@ const Home = () => {
           onSubmit={handleInput}
           className="flex items-center justify-around w-full bg-theme-light gap-x-4"
         >
-          <input
-            className="p-1 pl-3 border-2 border-theme-deem my-2 rounded"
-            type="text"
-            name="search"
-            placeholder="search a country"
-            autoComplete="off"
-          />
+          {!isLoading && (
+            <input
+              className="p-1 min-w-[300px] pl-3 border-2 border-theme-deem my-2 rounded"
+              type="text"
+              name="search"
+              placeholder="search a country"
+              autoComplete="off"
+            />
+          )}
           <Button
             classes="text-white"
             icon="refresh-line"
