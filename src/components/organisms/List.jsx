@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import propTypes from "prop-types";
 import { v4 as uuid } from "uuid";
 import ListItem from "../molecules/ListItem";
@@ -12,7 +11,7 @@ const List = ({ classes, label, list }) => (
           <ListItem
             key={uuid()}
             label={item.label}
-            classes={item.cla}
+            classes={item.classes}
             icon={item.icon}
             element={item.element}
           />
