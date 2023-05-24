@@ -6,5 +6,5 @@
 
 /* === global styles === */
 .pages {
-  @apply mt-[60px];
+  @apply mt-[60px] min-h-screen bg-pink-600 relative;
 }

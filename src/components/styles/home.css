@@ -1,11 +1,11 @@
 .cards {
-  @apply grid grid-cols-2 gap-0 w-full mt-0 p-0 relative bg-pink-600;
+  @apply grid grid-cols-2 gap-0 w-full mt-0 p-0 relative;
 }
 
 .loader {
-  @apply absolute top-0 left-0 w-full flex justify-center items-center;
+  @apply fixed top-0 left-0 w-full flex bg-white justify-center items-center;
 
-  min-height: 40vh;
+  min-height: 100vh;
 }
 
 .loader img {
@@ -53,23 +53,23 @@
 }
 
 .detail-card {
-  @apply flex flex-col p-2 min-h-screen bg-warmGray-100;
+  @apply flex flex-col min-h-screen bg-pink-600 gap-0 m-0 pt-1;
 }
 
 .detail-card h2 {
-  @apply text-4xl font-bold self-center mb-5 text-theme;
+  @apply text-4xl font-bold self-center mb-5 text-white;
 }
 
 .detail-card .flag {
-  @apply rounded-[0.25rem] mb-3;
+  @apply rounded-md mb-3 shadow-lg;
 }
 
 .detail-card i,
 .detail-card p {
-  @apply bg-red-500 py-2 px-3 rounded-md text-white;
+  @apply bg-theme-light py-3 px-3 text-white m-0;
 }
 
 .detail-card i:nth-child(2n),
 .detail-card p:nth-child(2n) {
-  @apply bg-theme my-3;
+  @apply bg-theme-deem m-0;
 }
