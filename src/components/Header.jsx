@@ -5,9 +5,9 @@ import List from "./organisms/List";
 import "./styles/header.css";
 
 const Header = ({ isDetail, title }) => (
-  <header className="header">
+  <header className="header" data-testid="header">
     {isDetail === true ? (
-      <Link to="/">
+      <Link to="/" data-testid="btn-back">
         <Button icon="arrow-left-s-line" classes="btn-nav" />
       </Link>
     ) : (
@@ -16,7 +16,7 @@ const Header = ({ isDetail, title }) => (
     <h4>{title}</h4>
     <List
       classes="btn-icons"
-      list={[{ icon: "settings-3-line" }, { icon: "mic-line" }]}
+      list={[{ icon: "mic-line" }, { icon: "settings-3-line" }]}
     />
   </header>
 );

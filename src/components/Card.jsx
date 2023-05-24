@@ -4,15 +4,16 @@ import calculatePopulation from "../helpers/population";
 import Button from "./molecules/Button";
 
 const Card = ({ info }) => (
-  <div className="card">
+  <div className="card" data-testid="card-item">
     <img
+      className="rounded-md"
       src={`https://flagcdn.com/${info.slug.toLowerCase()}.svg`}
       alt="flag"
     />
     <h4>{info.name}</h4>
-    <p>{calculatePopulation(info.population)}</p>
-    <p className="flex items-center justify-end">
-      <Link to={`/country/${info.slug.toLowerCase()}`}>
+    <p className="bg-overlay">{calculatePopulation(info.population)}</p>
+    <p>
+      <Link className="btn-holder" to={`/country/${info.slug.toLowerCase()}`}>
         <Button icon="arrow-right-line" classes="btn-detail" />
       </Link>
     </p>

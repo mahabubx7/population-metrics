@@ -4,7 +4,7 @@ import Icon from "../atoms/Icon";
 const ListItem = ({ icon, classes, label, element }) => (
   <li>
     {label && <span>{label}</span>}
-    {element && <element />}
+    {element || null}
     {icon && <Icon name={icon} classes={`text-3xl ${classes}`} />}
   </li>
 );

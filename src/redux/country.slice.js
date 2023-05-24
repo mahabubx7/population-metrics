@@ -2,14 +2,13 @@ import { createSlice } from "@reduxjs/toolkit";
 import { getCountry, searchCountry } from "./country.query";
 
 const initialState = {
-  name: "",
   data: [],
   isLoading: false,
   isLoaded: false,
   error: null,
 };
 
-const countrySlice = createSlice({
+export const countrySlice = createSlice({
   name: "country",
   initialState,
   reducers: {
