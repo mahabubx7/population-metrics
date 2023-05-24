@@ -4,7 +4,7 @@ import calculatePopulation from "../helpers/population";
 import Button from "./molecules/Button";
 
 const Card = ({ info }) => (
-  <div className="card">
+  <div className="card" data-testid="card-item">
     <img
       className="rounded-md"
       src={`https://flagcdn.com/${info.slug.toLowerCase()}.svg`}
