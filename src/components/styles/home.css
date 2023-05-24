@@ -17,7 +17,7 @@
 }
 
 .bg-overlay {
-  @apply absolute bottom-3 left-3 text-slate-300 text-2xl font-bold;
+  @apply absolute bottom-3 left-3 text-slate-100 text-[1.75rem] font-bold;
 }
 
 .card:nth-child(3n + 1) {
@@ -28,8 +28,12 @@
   @apply font-semibold mt-1 text-lg text-white;
 }
 
+.card .btn-holder {
+  @apply absolute top-0 left-0 w-full h-full flex justify-end items-end pb-3 pr-2;
+}
+
 .card .btn-detail {
-  @apply absolute bottom-3 right-3 bg-white text-theme ml-auto rounded-full w-10 h-10 text-lg;
+  @apply bg-white text-theme ml-auto rounded-full w-10 h-10 text-lg;
 }
 
 .detail-card {

@@ -12,8 +12,8 @@ const Card = ({ info }) => (
     />
     <h4>{info.name}</h4>
     <p className="bg-overlay">{calculatePopulation(info.population)}</p>
-    <p className="flex items-center justify-end">
-      <Link to={`/country/${info.slug.toLowerCase()}`}>
+    <p>
+      <Link className="btn-holder" to={`/country/${info.slug.toLowerCase()}`}>
         <Button icon="arrow-right-line" classes="btn-detail" />
       </Link>
     </p>
