@@ -13,11 +13,11 @@
 }
 
 .card {
-  @apply bg-theme-deem p-4 text-black relative;
+  @apply bg-theme-deem p-4 text-black relative min-h-[250px];
 }
 
 .bg-overlay {
-  @apply absolute bottom-3 left-1 text-slate-300 text-3xl font-bold;
+  @apply absolute bottom-3 left-3 text-slate-300 text-2xl font-bold;
 }
 
 .card:nth-child(3n + 1) {
@@ -29,7 +29,7 @@
 }
 
 .card .btn-detail {
-  @apply bg-white text-theme ml-auto rounded-md text-lg;
+  @apply absolute bottom-3 right-3 bg-white text-theme ml-auto rounded-full w-10 h-10 text-lg;
 }
 
 .detail-card {
