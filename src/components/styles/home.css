@@ -5,7 +5,7 @@
 .loader {
   @apply absolute top-0 left-0 w-full flex justify-center items-center;
 
-  min-height: calc(100vh - 200px);
+  min-height: 40vh;
 }
 
 .loader img {
