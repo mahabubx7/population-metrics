@@ -1,0 +1,20 @@
+.header {
+  @apply bg-theme text-white py-3 px-2 flex justify-between
+    items-center fixed w-full top-0 z-[999];
+}
+
+.header h4 {
+  @apply capitalize text-2xl;
+}
+
+.btn-nav {
+  @apply bg-red-100;
+}
+
+.nav-icon {
+  @apply text-3xl font-bold;
+}
+
+.btn-icons {
+  @apply list-none pl-0 flex items-center justify-end gap-x-6 pr-3;
+}

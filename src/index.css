@@ -1,0 +1,10 @@
+/* === styling with tailwind === */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === global styles === */
+.pages {
+  @apply mt-[60px] min-h-screen bg-pink-600 relative;
+}

@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "es2020": true
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": { "react": { "version": "18.2" } },
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/jsx-runtime",
+    "prettier"
+  ],
+  "plugins": ["react", "react-refresh"],
+  "rules": {
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "react-refresh/only-export-components": "warn",
+    "import/no-unresolved": "off",
+    "no-shadow": "off"
+  },
+  "overrides": [
+    {
+      // feel free to replace with your preferred file pattern - eg. 'src/**/*Slice.js' or 'redux/**/*Slice.js'
+      "files": [
+        "src/**/*.slice.js",
+        "src/**/*.query.js",
+        "src/redux/__tests__",
+        "src/setupTests.js"
+      ],
+      // avoid state param assignment
+      "rules": {
+        "no-param-reassign": ["error", { "props": false }],
+        "import/no-extraneous-dependencies": "warn"
+      }
+    }
+  ],
+  "ignorePatterns": ["dist/", "build/", "vite.config.js"]
+}

@@ -1,0 +1,75 @@
+.cards {
+  @apply grid grid-cols-2 gap-0 w-full mt-0 p-0 relative;
+}
+
+.loader {
+  @apply fixed top-0 left-0 w-full flex bg-white justify-center items-start;
+
+  min-height: 100vh;
+}
+
+.loader img {
+  @apply animate-spin mt-[120px];
+}
+
+.card {
+  @apply bg-theme-deem p-4 text-black relative min-h-[250px];
+}
+
+.card h4 {
+  @apply font-semibold mt-1 text-lg text-white;
+}
+
+.bg-overlay {
+  @apply absolute bottom-3 left-3 text-slate-100 text-[1.75rem] font-bold;
+}
+
+.card:first-child {
+  @apply col-span-2 pb-16 min-h-[180px] flex justify-between bg-theme-light mb-2;
+}
+
+.card:first-child > .bg-overlay {
+  @apply top-[42%] right-3 left-[inherit] text-4xl;
+}
+
+.card:first-child > img {
+  @apply w-[50%] ml-0 mr-1;
+}
+
+.card:first-child > h4 {
+  @apply text-2xl text-center;
+}
+
+.card:nth-child(3n - 1) {
+  @apply bg-theme-light;
+}
+
+.card .btn-holder {
+  @apply absolute top-0 left-0 w-full h-full flex justify-end items-end pb-3 pr-2;
+}
+
+.card .btn-detail {
+  @apply bg-white text-theme ml-auto rounded-full w-10 h-10 text-lg;
+}
+
+.detail-card {
+  @apply flex flex-col min-h-screen bg-pink-600 gap-0 m-0 pt-1;
+}
+
+.detail-card h2 {
+  @apply text-4xl font-bold self-center mb-5 text-white;
+}
+
+.detail-card .flag {
+  @apply rounded-md mb-3 shadow-lg;
+}
+
+.detail-card i,
+.detail-card p {
+  @apply bg-theme-light py-3 px-3 text-white m-0;
+}
+
+.detail-card i:nth-child(2n),
+.detail-card p:nth-child(2n) {
+  @apply bg-theme-deem m-0;
+}
